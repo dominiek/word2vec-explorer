@@ -79,4 +79,5 @@ if __name__ == '__main__':
                 'tools.staticdir.dir': STATIC_DIR
             }
         })
+    cherrypy.config.update( {'server.socket_host': '0.0.0.0'} )
     cherrypy.quickstart(app)
